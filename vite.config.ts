@@ -4,8 +4,12 @@ export default defineConfig({
   build: {
     lib: {
       entry: './lib/main.ts',
-      name: 'Counter',
-      fileName: 'counter',
+      name: 'LexicalEditor',
+      fileName: 'lexical-editor',
+      formats: ['es', 'cjs']
     },
+    rollupOptions: {
+      external: ['react/jsx-runtime'],
+    }
   },
 })

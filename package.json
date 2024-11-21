@@ -1,0 +1,33 @@
+{
+  "name": "lexical-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "types/lib"
+  ],
+  "main": "./dist/lexical-editor.cjs",
+  "module": "./dist/lexical-editor.js",
+  "types": "./types/lib/main.d.ts",
+  "exports": {
+    "types": "./types/lib/main.d.ts",
+    "import": "./dist/lexical-editor.js",
+    "require": "./dist/lexical-editor.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.9"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}
